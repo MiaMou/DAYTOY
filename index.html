@@ -8,6 +8,18 @@
         img {
             max-width: 100%;
         }
+        table {
+            width: 700px;
+            table-layout: auto;       
+            border-collapse: collapse;
+        }
+        th {
+            border: 1px solid gray;
+            background: gainsboro;
+        }
+        td {
+            border: 1px solid gray;
+        }
     </style>
 </head>
 <body>
@@ -90,58 +102,191 @@
     <h3 id="songs">单曲</h3>
     <table>
         <thead>
-            <tr><th>发布日期</th><th>歌曲名称</th><th>歌曲详情</th></tr>
+            <tr>
+                <th>发布日期</th>
+                <th>歌曲名称</th>
+                <th>歌曲详情</th>
+            </tr>
         </thead>
         <tbody>
-            <tr><td>2018年4月28日</td><td>踩影子</td><td>电视剧《哦！我的皇帝陛下》插曲</td></tr>
-            <tr><td>2018年10月5日</td><td>满足</td><td>第一首个人单曲</td></tr>
-            <tr><td>2019年7月8日</td><td>无羁（合唱版）</td><td>电视剧《陈情令》片尾曲</td></tr>
-            <tr><td></td><td>无羁（独唱版）</td><td></td></tr>
-            <tr><td>2019年7月22日</td><td>曲尽陈情</td><td>电视剧《陈情令》魏无羡人物曲</td></tr>
-            <tr><td>2019年9月12日</td><td>问少年</td><td>电影《诛仙 I》放肆版主题曲	</td></tr>
-            <tr><td>2019年9月30日</td><td>我和我的祖国</td><td></td></tr>	
-            <tr><td>2019年10月4日</td><td>我的中国心</td><td>《青春为祖国歌唱》献礼音乐专辑合唱歌曲</td></tr>
-            <tr><td>2019年10月31日</td><td>最好的夏天</td><td></td></tr>
-            <tr><td>2019年11月7日</td><td>两只老虎</td><td>电影《两只老虎》推广曲</td></tr>
-            <tr><td>2019年11月26日</td><td>余年</td><td>电视剧《庆余年》片尾曲</td></tr>	
-            <tr><td>2019年12月19日</td><td>沧海一声笑（国韵版）</td><td> 手游《新笑傲江湖》主题曲</td></tr>
-            <tr><td>2020年1月26日</td><td>千年一声唱</td><td>央视《经典咏流传》第三季主题曲</td></tr>	
-            <tr><td>2020年1月26日</td><td>竹石</td>	<td>央视《经典咏流传》第三季个人曲目</td></tr>
-            <tr><td>2020年2月2日</td><td>坚信爱会赢</td><td>抗击新冠疫情公益合唱歌曲</td></tr>
-            <tr><td>2020年2月8日</td><td>岁岁平安</td><td></td></tr>
-            <tr><td>2020年4月25日</td><td>光点</td><td>第一首个人付费数字单曲</td></tr>
+            <tr>
+                <td>2018年4月28日</td>
+                <td><a href="https://baike.baidu.com/item/%E8%B8%A9%E5%BD%B1%E5%AD%90/22545941" target="_blank">踩影子</a></td>
+                <td>电视剧《<a href="https://zh.wikipedia.org/wiki/%E5%93%A6%EF%BC%81%E6%88%91%E7%9A%84%E7%9A%87%E5%B8%9D%E9%99%9B%E4%B8%8B" target="_blank">哦！我的皇帝陛下</a>》插曲</td>
+            </tr>
+            <tr>
+                <td>2018年10月5日</td>
+                <td><a href="https://baike.baidu.com/item/%E6%BB%A1%E8%B6%B3/22909221" target="_blank">满足</a></td>
+                <td>第一首个人单曲</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2019年7月8日</td>
+                <td><a href="https://baike.baidu.com/item/%E6%97%A0%E7%BE%81/23602735" target="_blank">无羁</a>（合唱版）</td>
+                <td rowspan="2">电视剧《<a href="https://zh.wikipedia.org/wiki/%E9%99%88%E6%83%85%E4%BB%A4" target="_blank">陈情令</a>》片尾曲</td>
+            </tr>
+            <tr>   
+                <td><a href="https://baike.baidu.com/item/%E6%97%A0%E7%BE%81/23602735" target="_blank">无羁</a>（独唱版）</td>
+            </tr>
+            <tr>
+                <td>2019年7月22日</td>
+                <td><a href="https://baike.baidu.com/item/%E6%9B%B2%E5%B0%BD%E9%99%88%E6%83%85" target="_blank">曲尽陈情</a></td>
+                <td>电视剧《<a href="https://zh.wikipedia.org/wiki/%E9%99%88%E6%83%85%E4%BB%A4" target="_blank">陈情令</a>》魏无羡人物曲</td>
+            </tr>
+            <tr>
+                <td>2019年9月12日</td>
+                <td><a href="https://baike.baidu.com/item/%E9%97%AE%E5%B0%91%E5%B9%B4/23753538" target="_blank">问少年</a></td>
+                <td>电影《<a href="https://zh.wikipedia.org/wiki/%E8%AF%9B%E4%BB%99_I" target="_blank">诛仙 I</a>》放肆版主题曲</td>
+            </tr>
+            <tr>
+                <td>2019年9月30日</td>
+                <td>我和我的祖国</td>
+                <td rowspan="3">《青春为祖国歌唱》献礼音乐专辑合唱歌曲</td>
+            </tr>	
+            <tr>
+                <td>2019年10月4日</td>
+                <td>我的中国心</td>      
+            </tr>
+            <tr>
+                <td>2019年10月31日</td>
+                <td><a href="https://baike.baidu.com/item/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%A4%8F%E5%A4%A9/23890280" target="_blank">最好的夏天</a></td>                
+            </tr>
+            <tr>
+                <td>2019年11月7日</td>
+                <td><a href="https://baike.baidu.com/item/%E4%B8%A4%E5%8F%AA%E8%80%81%E8%99%8E/24131210#viewPageContent" target="_blank">两只老虎</a></td>
+                <td>电影《<a href="https://zh.wikipedia.org/wiki/%E4%B8%A4%E5%8F%AA%E8%80%81%E8%99%8E_(2019%E5%B9%B4%E7%94%B5%E5%BD%B1)" target="_blank">两只老虎</a>》推广曲</td>
+            </tr>
+            <tr>
+                <td>2019年11月26日</td>
+                <td><a href="https://baike.baidu.com/item/%E4%BD%99%E5%B9%B4/24166266" target="_blank">余年</a></td>
+                <td>电视剧《<a href="https://zh.wikipedia.org/wiki/%E5%BA%86%E4%BD%99%E5%B9%B4" target="_blank">庆余年</a>》片尾曲</td>
+            </tr>	
+            <tr>
+                <td>2019年12月19日</td>
+                <td>沧海一声笑（国韵版）</td>
+                <td> 手游《<a href="https://zh.wikipedia.org/wiki/%E7%AC%91%E5%82%B2%E6%B1%9F%E6%B9%96_(2018%E5%B9%B4%E9%9B%BB%E8%A6%96%E5%8A%87)" target="_blank">新笑傲江湖</a>》主题曲</td>
+            </tr>
+            <tr>
+                <td>2020年1月26日</td>
+                <td><a href="https://baike.baidu.com/item/%E5%8D%83%E5%B9%B4%E4%B8%80%E5%A3%B0%E5%94%B1/24288790" target="_blank">千年一声唱</a></td>
+                <td>央视《<a href="https://zh.wikipedia.org/wiki/%E7%BB%8F%E5%85%B8%E5%92%8F%E6%B5%81%E4%BC%A0" target="_blank">经典咏流传</a>》第三季主题曲</td>
+            </tr>	
+            <tr>
+                <td>2020年1月26日</td>
+                <td><a href="https://baike.baidu.com/item/%E7%AB%B9%E7%9F%B3/24290627" target="_blank">竹石</a></td>	
+                <td>央视《<a href="https://zh.wikipedia.org/wiki/%E7%BB%8F%E5%85%B8%E5%92%8F%E6%B5%81%E4%BC%A0" target="_blank">经典咏流传</a>》第三季个人曲目</td>
+            </tr>
+            <tr>
+                <td>2020年2月2日</td>
+                <td><a href="https://baike.baidu.com/item/%E5%9D%9A%E4%BF%A1%E7%88%B1%E4%BC%9A%E8%B5%A2/24303669" target="_blank">坚信爱会赢</a></td>
+                <td rowspan="2">抗击新冠疫情公益合唱歌曲</td>
+            </tr>
+            <tr>
+                <td>2020年2月8日</td>
+                <td><a href="https://baike.baidu.com/item/%E5%B2%81%E5%B2%81%E5%B9%B3%E5%AE%89/24329618" target="_blank">岁岁平安</a></td>
+            </tr>
+            <tr>
+                <td>2020年4月25日</td>
+                <td><a href="https://zh.wikipedia.org/wiki/%E5%85%89%E7%82%B9_(%E5%8D%95%E6%9B%B2)" target="_blank">光点</a></td>
+                <td>第一首个人付费数字单曲</td>
+            </tr>
         </tbody>	
     </table>
 
     <h3 id="series">电视剧</h3>
     <table>
         <thead>
-            <tr><th>首播年度</th> <th>剧名</th> <th>角色</th> <th>备注</th></tr>
+            <tr>
+                <th>首播年度</th> 
+                <th>剧名</th> 
+                <th>角色</th> 
+                <th>备注</th>
+            </tr>
         </thead>
         <tbody>
-            <tr><td>2016</td>	<td>《超星星学园》</td>	<td>方天择</td>	<td>网络剧</td></tr>
-            <tr><td></td>       <td>《相爱穿梭千年2》</td>	<td>梁老板</td><td></td></tr> 	
-            <tr><td>2018</td>	<td>《哦！我的皇帝陛下》第一季</td>	<td>北堂墨染</td>	<td>网络剧</td></tr>
-            <tr><td></td>       <td>《哦！我的皇帝陛下》第二季</td><td></td>   <td></td>       </tr> 
-            <tr><td></td>       <td>《斗破苍穹》</td><td>林修崖</td><td></td></tr>   
-            <tr><td>2019</td>	<td>《陈情令》</td>	<td>魏无羡/莫玄羽</td>	<td>网络剧</td></tr>
-            <tr><td></td>       <td>《庆余年》</td>	<td>言冰云</td><td></td></tr>
-            <tr><td>2020</td>	<td>《最美逆行者》</td>	<td>蔡丁</td>	<td>单元《幸福社区》</td></tr>
-            <tr><td></td>       <td>《狼殿下》</td>	<td>疾冲</td><td></td></tr>	
-            <tr><td>待播</td>	 <td>《斗罗大陆》</td>	<td>唐三</td>	<td>网络剧</td></tr>
-            <tr><td></td>       <td>《余生，请多指教》</td>	<td>顾魏</td><td></td></tr>	
+            <tr>
+                <td rowspan="2">2016</td>	
+                <td>《<a href="https://baike.baidu.com/item/%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD" target="_blank">超星星学园</a>》</td>	
+                <td>方天择</td>	
+                <td>网络剧</td>
+            </tr>
+            <tr>     
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E7%9B%B8%E7%88%B1%E7%A9%BF%E6%A2%AD%E5%8D%83%E5%B9%B42%EF%BC%9A%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E4%BA%A4%E6%8D%A2" target="_blank">相爱穿梭千年2</a>》</td>	
+                <td>梁老板</td>
+                <td>上星剧</td>
+            </tr> 	
+            <tr>
+                <td rowspan="3">2018</td>	
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E5%93%A6%EF%BC%81%E6%88%91%E7%9A%84%E7%9A%87%E5%B8%9D%E9%99%9B%E4%B8%8B" target="_blank">哦！我的皇帝陛下</a>》第一季</td>	
+                <td rowspan="2">北堂墨染</td>	
+                <td rowspan="2">网络剧</td>
+            </tr>
+            <tr>     
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E5%93%A6%EF%BC%81%E6%88%91%E7%9A%84%E7%9A%87%E5%B8%9D%E9%99%9B%E4%B8%8B" target="_blank">哦！我的皇帝陛下</a>》第二季</td>     
+            </tr> 
+            <tr>  
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9_(%E7%94%B5%E8%A7%86%E5%89%A7)" target="_blank">斗破苍穹</a>》</td>
+                <td>林修崖</td>
+                <td>上星剧</td>
+            </tr>   
+            <tr>
+                <td rowspan="2">2019</td>	
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E9%99%88%E6%83%85%E4%BB%A4" target="_blank">陈情令</a>》</td>	
+                <td>魏无羡/莫玄羽</td>	
+                <td rowspan="2">网络剧</td>
+            </tr>
+            <tr>    
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E5%BA%86%E4%BD%99%E5%B9%B4" target="_blank">庆余年</a>》</td>	
+                <td>言冰云</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2020</td>	
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E7%BE%8E%E9%80%86%E8%A1%8C%E8%80%85#%E5%B9%B8%E7%A6%8F%E7%A4%BE%E5%8C%BA" target="_blank">最美逆行者</a>》</td>	
+                <td>蔡丁</td>	
+                <td>单元《幸福社区》</td>
+            </tr>
+            <tr>    
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E7%8B%BC%E6%AE%BF%E4%B8%8B" target="_blank">狼殿下</a>》</td>	
+                <td>疾冲</td>
+                <td>网络剧</td>
+            </tr>	
+            <tr>
+                <td rowspan="2">待播</td>	 
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86_(%E7%94%B5%E8%A7%86%E5%89%A7)" target="_blank">斗罗大陆</a>》</td>	
+                <td>唐三</td>	
+                <td></td>
+            </tr>
+            <tr>
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99" target="_blank">余生，请多指教</a>》</td>	
+                <td>顾魏</td>
+                <td></td>
+            </tr>	
         </tbody>
     </table>
 
     <h3 id="movies">电影</h3>
     <table>
         <thead>
-            <tr><th>年份</th><th>电影名称</th><th>角色</th></tr>
+            <tr>
+                <th>年份</th>
+                <th>电影名称</th>
+                <th>角色</th>
+            </tr>
         </thead>
         <tbody>
-            <tr><td>2018年</td>	<td>《捉妖记2》</td><td>小妖</td></tr>
-            <tr><td>2019年</td>	<td>《素人特工》</td><td>没脚小凤</td></tr>
-            <tr><td></td>      <td>《诛仙 I》</td>	<td>张小凡</td></tr> 
+            <tr>
+                <td>2018年</td>	
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E6%8D%89%E5%A6%96%E8%AE%B02" target="_blank">捉妖记2</a>》</td>
+                <td>小妖</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2019年</td>	
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E4%BA%BA%E7%89%B9%E5%B7%A5" target="_blank">素人特工</a>》</td>
+                <td>没脚小凤</td>
+            </tr>
+            <tr>     
+                <td>《<a href="https://zh.wikipedia.org/wiki/%E8%AF%9B%E4%BB%99_I" target="_blank">诛仙 I</a>》</td>	
+                <td>张小凡</td>
+            </tr> 
         </tbody>
     </table>
     <h3 id="shows">综艺节目</h3>
@@ -150,8 +295,8 @@
             <tr><th>日期</th><th>节目名称</th><th>主办方</th><th>播放平台</th></tr>
         </thead>
         <tbody>
-            <tr><td>2015年11月22日～2016年2月1日</td>	<td>《燃烧吧少年》</td><td>浙江卫视、天娱传媒、腾讯视频</td>	<td>浙江卫视</td></tr>
-            <tr><td>2019年10月26日～2020年1月19日</td><td>《我们的歌》第一季</td><td>	东方卫视</td><td>东方卫视</td></tr>
+            <tr><td>2015年11月22日～2016年2月1日</td>	<td>《<a href="https://zh.wikipedia.org/wiki/%E7%87%83%E7%87%92%E5%90%A7%E5%B0%91%E5%B9%B4" target="_blank">燃烧吧少年</a>》</td><td>浙江卫视、天娱传媒、腾讯视频</td>	<td><a href="https://zh.wikipedia.org/wiki/%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86" target="_blank">浙江卫视</a></td></tr>
+            <tr><td>2019年10月26日～2020年1月19日</td><td>《<a href="https://zh.wikipedia.org/wiki/%E6%88%91%E4%BB%AC%E7%9A%84%E6%AD%8C_(%E7%BB%BC%E8%89%BA%E8%8A%82%E7%9B%AE)" target="_blank">我们的歌</a>》第一季</td><td>	东方卫视</td><td><a href="https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86" target="_blank">东方卫视</a></td></tr>
         </tbody>
     </table>
 
